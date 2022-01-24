@@ -25,7 +25,7 @@ jobs:
               docker login -u "$DOCKERHUB_USERNAME" -p $DOCKERHUB_PASSWORD
               docker build  -t rushi:latest .
               docker images 
-              docker push circle-ci:latest
+              docker push rushi:latest
             
 
 workflows:
