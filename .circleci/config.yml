@@ -24,8 +24,9 @@ jobs:
             command: |
               docker login -u "$DOCKERHUB_USERNAME" -p $DOCKERHUB_PASSWORD
               docker build  -t circle-ci:latest .
+              docker tag circle-ci:latest  chelkala/cicle-ci:nothing
               docker images 
-              docker push circle-ci:latest
+              docker push chelkala/circle-ci:nothing
             
 
 workflows:
