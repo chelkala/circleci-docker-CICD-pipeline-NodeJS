@@ -23,9 +23,9 @@ jobs:
             name: Publish Docker Image to Docker Hub
             command: |
               docker login -u "$DOCKERHUB_USERNAME" -p $DOCKERHUB_PASSWORD
-              docker build  -t rushi:latest .
+              docker build  -t circle-ci:latest .
               docker images 
-              docker push rushi:latest
+              docker push circle-ci:latest
             
 
 workflows:
