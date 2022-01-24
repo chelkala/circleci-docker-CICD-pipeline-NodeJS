@@ -26,7 +26,7 @@ jobs:
               docker build  -t $IMAGE_NAME:latest .
               docker tag $IMAGE_NAME:latest  chelkala/cicle-ci:latest
               docker images 
-              docker push chelkala/circle-ci:latest
+              docker push $IMAGE_NAME:latest
             
 
 workflows:
